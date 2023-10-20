@@ -1,0 +1,19 @@
+h1{
+  text-align: center;
+}
+
+table{
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: rgb(83, 63, 63);
+  text-align: center;
+  clear: both;
+
+}
+.center-table{
+  justify-content: center;
+  align-items: center;
+}
+th, td{
+  color: white;
+}

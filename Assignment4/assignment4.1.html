@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part B</title>
+    <script src="ass4.js"></script>
+
+
+    <!-- jQuery Mobile -->
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" src="scripts/converter.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Converter App</h1>
+      </div>
+
+      <div data-role="content">
+        <div data-role="fieldcontain">
+          <label for="measurment" id="label">Inches</label>
+          <input type="number" id="measurement" name="measurement"/>
+        </div>
+
+        <fieldset data-role="controlgroup">
+          <legend>Convert to:</legend>
+          <input type="radio" name="units" id="inches" value="inches" onclick="setUnits(1)">
+          <label for="inches">Inches</label>
+
+          <input type="radio" name="units" id="centimeters" value="centimeters" checked="checked"
+              onclick="setUnits(2)">
+          <label for="centimeters">Centimeters</label>
+        </fieldset>
+
+        <input type="button" onclick="convert()" value="Convert" />
+
+        <p id="answer"></p>
+      </div>
+    </div>
+  </body>
+</html>
