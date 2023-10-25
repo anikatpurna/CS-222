@@ -2,7 +2,9 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
 }
-
+.time{
+ background-color: #d42ea2;
+}
 h1 {
   color: #060000;
   text-align: left;

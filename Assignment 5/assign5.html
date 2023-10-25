@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./js/montyHall.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Assignment 5</title>
+  </head>
+  <body onload="randomize()">
+    <h1>Monty Hall Game</h1>
+    <hr />
+
+    <h2>A car prize is behind one of the doors.</h2>
+    <br />
+
+    <p id="instructions">Please pick a door.</p>
+
+    <table>
+      <tr>
+        <td>
+          <button onclick="chooseDoor(0)">
+            <img src="./media/mhdoor1.png" />
+          </button>
+        </td>
+        <td>
+          <button onclick="chooseDoor(1)">
+            <img src="./media/mhdoor2.png" />
+          </button>
+        </td>
+        <td>
+          <button onclick="chooseDoor(2)">
+            <img src="./media/mhdoor3.png" />
+          </button>
+        </td>
+      </tr>
+    </table>
+    <p id="caption">My Mobile Game</p>
+  </body>
 </html>
