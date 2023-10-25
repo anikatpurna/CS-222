@@ -1,0 +1,48 @@
+* {
+  color: rgb(12, 12, 12);
+  font-size: 30px;
+}
+
+.all {
+  width: 350px;
+}
+
+.radio {
+  border: 1px solid black;
+}
+
+.inches {
+  margin-left: 15px;
+  float: left;
+}
+
+.cm {
+  text-align: right;
+  margin-right: 25px;
+}
+
+#input {
+  float: left;
+  width: 90%;
+}
+
+#output {
+  font-size: 20px;
+}
+
+.convertFrom {
+  text-align: right;
+}
+
+#convertTo {
+  padding-left: 50px;
+}
+
+button {
+  background-color: rgb(233, 218, 218);
+  font-size: 40px;
+  width: 100%;
+  border: 3px solid rgb(186, 186, 186);
+  font-weight: bold;
+  color: black;
+}
