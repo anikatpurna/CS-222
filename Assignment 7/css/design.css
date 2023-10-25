@@ -1,0 +1,17 @@
+#sampleText {
+  background-color: gold;
+}
+
+button {
+  background-color: grey;
+  width: 100%;
+  text-align: center;
+}
+
+#userText {
+  width: 100%;
+}
+
+#page {
+  width: 30%;
+}

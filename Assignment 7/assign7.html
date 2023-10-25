@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="stylesheet" href="./css/design.css"> 
+    <script src="./js/script.js"></script> 
+
+    <title>Assignment 7</title> 
+</head>
+<body>
+    <div id="page">
+    <h1>Texting Tutor</h1> 
+
+    <p>Specify your texting level</p> 
+    <fieldset data-role="controlgroup"> 
+
+        <input type="radio" name="level" id="beginner" checked>Beginner <!-- Radio button for "Beginner" level with initial selection -->
+        <input type="radio" name="level" id="advanced">Advanced <!-- Radio button for "Advanced" level -->
+    
+    </fieldset>
+
+    <br>
+    <button onclick="startTest()">Click this button to start a test.</button> <!-- Button to start a test with an associated JavaScript function -->
+    <p>The text you will type will appear here:</p> 
+    <p id="sampleText">‎</p> <!-- Placeholder for sample text -->
+    <br>
+
+    <p>Enter your text here:</p> 
+
+    <input type="text" id="userText"><br> <!-- Input field for user's text input -->
+    <button onclick="endTest()">Click this button when you are done typing.</button><br> 
+    <img id="resultImg" src="" width="25%"> <!-- Image element for displaying a result image -->
+    <div id="result"></div> 
+  
+    <img src="./media/EmojiUp.jpg" width="1" style="visibility:hidden;"> 
+    <img src="./media/emojiDown.jpg" width="1" style="visibility:hidden;"> 
+</body>
+</html>
