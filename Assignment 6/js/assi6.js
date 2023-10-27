@@ -16,14 +16,8 @@ function calculateTable() {
     var time = "";
     console.log(i);
 
-    if (i > miles) {
-      var extra = Math.round((miles - i + 1) * (60 * pace[0] + pace[1]));
-      sec += extra;
-      console.log(extra);
-    } else {
-      min += pace[0];
-      sec += pace[1];
-    }
+    min += pace[0];
+    sec += pace[1];
 
     if (sec >= 60) {
       min++;
@@ -34,7 +28,8 @@ function calculateTable() {
       min -= 60;
     }
 
-    time = (hrs > 0 ? (hrs < 10 ? "0" : "") + hrs + ":" : "") +
+    time =
+      (hrs > 0 ? (hrs < 10 ? "0" : "") + hrs + ":" : "") +
       (min < 10 ? "0" : "") +
       min +
       ":" +
