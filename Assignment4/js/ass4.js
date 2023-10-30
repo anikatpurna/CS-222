@@ -1,36 +1,27 @@
-function convert() {
-  var length = document.getElementById("input").value;
-  var elements = document.getElementsByName("unit");
-  var unit, convertedLength, convertedUnit;
+var convertResult;
+var holdUnits;
 
-  for (var i = 0; i < elements.length; i++) {
-      console.log(elements[i].value);
-      if (elements[i].checked) {
-          convertedUnit = elements[i].value;
-      }
+//inside the input, it holds inches and centimeters
+function setUnits(input) {
+  //units convertion
+  if (input == "Centimeters") {
+    holdUnits = "Inches";
+    document.getElementById("label").innerHTML = "Centimeters";
+    } else {
+    holdUnits = "Centimeters";
+    document.getElementById("label").innerHTML = "Inches";
   }
-
-  if (convertedUnit == "Inches") {
-      convertedLength = length/2.54;
-      unit = "Centimeters";
-  } else if (convertedUnit == "Centimeters") {
-      convertedLength = length*2.54;
-      unit = "Inches";
-  }
-
-  document.getElementById("output").textContent = length + " " + unit + " converts to " + convertedLength.toFixed(1) + " " + convertedUnit;
+  return holdUnits;
 }
 
-function changeUnit() {
-  var elements = document.getElementsByName("unit");
-  var unit;
+function convert(){
+  if(holdUnits=="Inches"){
+    convertResult = document.getElementById("measurement").value * .393;
+    document.getElementById("answer").innerHTML = convertResult + " Inches";
+  } else {
+    convertResult = document.getElementById("measurement").value * 2.54;
+    document.getElementById("answer").innerHTML = convertResult + " Centimeters";
 
-  for (var i = 0; i < elements.length; i++) {
-      console.log(elements[i].value);
-      if (!elements[i].checked) {
-          unit = elements[i].value;
-      }
   }
-
-  document.getElementById("convertFrom").textContent = unit;
+  
 }

@@ -2,7 +2,7 @@ function calculateTable() {
   clearTable();
   var miles = document.getElementById("distance").value;
   var pace = document.getElementById("pace").value.split(":");
-  var table = document.getElementById("table");
+  var table = document.getElementById("table"); //because we need table so that we can add things to the table
 
   var markup = table.innerHTML;
   var hrs = 0;
@@ -44,6 +44,5 @@ function calculateTable() {
 
 //clear the table
 function clearTable() {
-  document.getElementById("table").innerHTML =
-    "<tr> <th>Miles</th> <th>Time</th> </tr>";
+  document.getElementById("table").innerHTML = "<tr> <th>Miles</th> <th>Time</th> </tr>";
 }
